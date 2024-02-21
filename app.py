@@ -7,7 +7,7 @@ from langchain.prompts import PromptTemplate
 def getLLamaResponse(input_text, no_of_words, blog_style):
 
     ### calling LLAMA2 MODEL
-    llm = CTransformers(model = '/Users/karthiksagar/BlogGeneration/models/llama-2-7b-chat.ggmlv3.q8_0.bin',
+    llm = CTransformers(model = '/your/model/path/llama-2-7b-chat.ggmlv3.q8_0.bin',
                         model_type='llama',
                         config={"max_new_tokens":256,
                                 'temperature':0.01})
